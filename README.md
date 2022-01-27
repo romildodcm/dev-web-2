@@ -16,6 +16,7 @@
     - [SQLite](#sqlite)
     - [SQLite Browser](#sqlite-browser)
   - [20220125 - Aula 1 - Introdução](#20220125---aula-1---introdução)
+    - [Atividade 2](#atividade-2)
 
 ---
 ## Preparação do Ambiente
@@ -85,3 +86,23 @@ No nosso caso o servidor será o framework **Flask** (Python).
 Mas para testar o que faremos no servidor, precisaremos usar o JavaScript no lado do cliente para enviar requisições para o servidor (Flask). Request, response (HTTP). Entenderemos como o JS envia as requisições, iniciaremos com chamadas síncronas, se der tempo veremos também as assíncronas (mais legal).
 
 **Objetivo e necessidade da programação no lado do servidor**: a persistência de dados, banco de dados, sigilo de informação, execução de tarefas complexas e que no lado do cliente não seriam possíveis.
+
+### Atividade 2
+
+Executar os comandos a seguir no terminal:
+
+```
+git clone https://github.com/fscheidt/flask_basic.git
+
+cd flask_basic
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip3 install -r ./requirements.txt
+```
+
+Após clonar o projeto, implementar uma rota `"/about"` que redireciona para `about.html` com informações sobre o sistema. Enviar projeto para o professor em arquivo zip ou link no github.
+
+![rota-about-implementada.png](./flask_basic/rota-about-implementada.png)
