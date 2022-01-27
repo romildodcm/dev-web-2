@@ -105,4 +105,5 @@ pip3 install -r ./requirements.txt
 
 Após clonar o projeto, implementar uma rota `"/about"` que redireciona para `about.html` com informações sobre o sistema. Enviar projeto para o professor em arquivo zip ou link no github.
 
+[Diretório com a atividade](/flask_basic/)
 ![rota-about-implementada.png](./flask_basic/rota-about-implementada.png)
