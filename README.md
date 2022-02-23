@@ -17,6 +17,9 @@
     - [SQLite Browser](#sqlite-browser)
   - [20220125 - Aula 1 - Introdução](#20220125---aula-1---introdução)
     - [Atividade 2](#atividade-2)
+  - [20220208 - Projetinho do sorteador](#20220208---projetinho-do-sorteador)
+  - [20220115 - Padronização de projeto e Boas práticas](#20220115---padronização-de-projeto-e-boas-práticas)
+  - [Venv Python](#venv-python)
 
 ---
 ## Preparação do Ambiente
@@ -107,3 +110,36 @@ Após clonar o projeto, implementar uma rota `"/about"` que redireciona para `ab
 
 [Diretório com a atividade](/flask_basic/)
 ![rota-about-implementada.png](./flask_basic/rota-about-implementada.png)
+
+## 20220208 - Projetinho do sorteador
+
+Disponível em: ...
+
+## 20220115 - Padronização de projeto e Boas práticas
+
+Referência: [Python/Flask Tutorial for Visual Studio Code](https://github.com/microsoft/python-sample-vscode-flask-tutorial)
+
+python --version
+
+
+```
+# no diretorio do projeto
+source venv/bin/activate
+
+pip3 install -r ./requirements.txt
+```
+
+
+## Venv Python
+
+```
+# Creates the virtual env
+python3 -m venv <folder-name>
+
+# Activate
+source <folder-name>/bin/activate
+
+# Install requirements
+pip3 install -r ./requirements.txt
+
+```

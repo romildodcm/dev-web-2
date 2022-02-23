@@ -52,6 +52,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+bin/
+include/
+share/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
