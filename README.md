@@ -20,6 +20,7 @@
   - [20220208 - Projetinho do sorteador](#20220208---projetinho-do-sorteador)
   - [20220115 - Padronização de projeto e Boas práticas](#20220115---padronização-de-projeto-e-boas-práticas)
   - [Venv Python](#venv-python)
+  - [20220222 - anotações](#20220222---anotações)
 
 ---
 ## Preparação do Ambiente
@@ -143,3 +144,6 @@ source <folder-name>/bin/activate
 pip3 install -r ./requirements.txt
 
 ```
+## 20220222 - anotações
+`manter/database.py`: gerencia a conexão com o banco de dados
+`manter/dao.py`: tem as funções de CRUD, gerenciamento dos dados
