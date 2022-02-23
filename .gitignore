@@ -56,6 +56,41 @@ bin/
 include/
 share/
 
+*.zip
+*.7z
+.idea/
+# manter/manter.db
+# Jupyter Notebook
+.ipynb_checkpoints
+
+__pycache__/  
+*.py[cod]  
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+lib/
+
+
+# Environments
+.env
+.venv
+env/
+lib64
+venv/
+ENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+
+# Cython debug symbols
+cython_debug/
+
+
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
