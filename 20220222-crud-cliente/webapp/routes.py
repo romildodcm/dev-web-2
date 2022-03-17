@@ -34,6 +34,9 @@ def delete(id):
     # # consulta o banco, e recupera o cliente
     # cliente = Database.getCliente(id)
     # Database.delete(cliente.id)
+    
+    conn.execute("DELETE from STUDENT where ID = 2;")
+    conn.commit()
 
     return "manter.html"
 
