@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page">
+
+  {% if produto %}
+  <h3>Atualizar produto</h3>
+  {% else %}
+  <h3>Cadastro produto</h3>
+  {% endif %}
+
+  <form class="manter" action="/produto/save" method="POST">
+    {% if produto %}
+    <input type="hidden" name="id" value="{{ produto[0] }}">
+    {% endif %}
+    <label>
+      <span>Nome:</span>
+      <input type="text" value="{{ produto[1] }}" name="nome" autocomplete="off" minlength="2" required="required" />
+    </label>
+
+    <label>
+      <span>Descrição:</span>
+      <textarea id="descricao" name="descricao" rows="4" cols="24">{{ produto[2] }}</textarea>
+      <!-- <input type="text" value="{{ produto[2] }}" rows="5" name="descricao" autocomplete="off" /> -->
+    </label>
+    <label>
+      <span>Preço:</span>
+      <input type="number" step="0.01" value="{{ produto[3] }}" name="preco" autocomplete="off" />
+    </label>
+    <label>
+      <span>Quantidade:</span>
+      <input type="number" value="{{ produto[4] }}" name="quantidade" autocomplete="off" />
+    </label>
+    {% if cliente %}
+    <input type="submit" value="Atualizar" />
+    {% else %}
+    <input type="submit" value="Adicionar" />
+    {% endif %}
+  </form>
+
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="page">
+  <h3 class="mt-3">Produtos</h3>
+  <div class="dataview dataview-produto">
+    <div class="th">ID</div>
+    <div class="th">Nome</div>
+    <div class="th">Descrição</div>
+    <div class="th">Preço</div>
+    <div class="th">Quantidade</div>
+    <div class="th">data</div>
+    <div class="th">actions</div>
+    {% for cli in produtos %}
+    <div> {{ cli[0] }} </div>
+    <div> {{ cli[1] }} </div>
+    <div> {{ cli[2] }} </div>
+    <div> {{ cli[3] }} </div>
+    <div> {{ cli[4] }} </div>
+    <div> {{ cli[5] }} </div>
+    <div>
+      <a href="/produto/delete/{{cli[0]}}">[X]</a> |
+      <a href="/produto/edit/{{cli[0]}}">[E]</a>
+    </div>
+    {% endfor %}
+  </div>
+  <h4 class="mt-3">Buscar Produto</h4>
+  <div class="container mb-3 ">
+    <form class="" action="/produto/findbyname/" method="POST">
+      <label>
+        <input class="form-control" type="text" placeholder="Nome do produto" name="nome" autocomplete="off"
+          minlength="2" required="required" />
+      </label>
+      <input type="submit" value="Buscar" class="btn btn-sm btn-primary" />
+    </form>
+  </div>
+</div>
+{% endblock %}
