@@ -1,9 +1,9 @@
 
 # Finalizar CRUD cliente
 - [x] findall
-- [ ] Save
-- [ ] Update/editar
-- [ ] findby nome
+- [x] Save
+- [x] Update/editar
+- [x] findby nome
 
 ## Arquitetura MVC
 - Model - entities.py (Cliente), Dao
@@ -34,5 +34,8 @@ Criar a Route para listar todos produtos
 Redefinir cliente para:
 /cliente/findall
 
-
-Implementar todas operações CRUD para produto: save, delete, update e find.
+Implementar todas operações CRUD para produto: 
+- [x] save; 
+- [x] delete;
+- [x] update;
+- [x] find.
